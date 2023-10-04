@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", cursive;
+  font-size: 2rem;
+  color: #333;
+  background-color: #79c7dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.app {
+  padding: 6rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+input {
+  font-family: inherit;
+  color: #333;
+  font-size: 2rem;
+  background-color: #f0d2ce;
+  padding: 1.6rem 2rem;
+  border: none;
+  width: 100%;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  outline: none;
+}
+
+.weather {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.day {
+  background-color: #f0d2ce;
+  padding: 1.6rem;
+  margin: 1rem;
+  width: calc(33.333% - 2rem);
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.day span {
+  font-size: 3.6rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.day.important {
+  background-color: #97dae4;
+  outline: 2px solid #555;
+}
+
+.loader {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
